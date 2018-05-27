@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "MusicGroup",
+      "@id": "{{- .Site.BaseURL -}}",
+      "name": "1982",
+      "url": "{{- .Site.BaseURL -}}",
+      "logo": "{{- "img/banner-logo.png" | absURL -}}",
+      "description": "{{- .Site.Params.description -}}",
+      "address" : {
+        "@type" : "PostalAddress",
+        "addressLocality" : "Brussels",
+        "addressCountry" : "Belgium"
+      },
+      "sameAs": [
+        "https://www.facebook.com/1982-band-RIP-58819456659/",
+        "https://myspace.com/the1982"]
+    }
+  </script>
+  <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+  <meta name="description" content="{{ with .Description }}{{- . -}}{{ else }}{{ if .IsPage }}{{- .Summary -}}
+      {{ else }}{{ with .Site.Params.description }}{{- . -}}{{ end }}{{ end }}{{ end }}">
+  {{- template "_internal/schema.html" . -}}
+  {{- template "_internal/opengraph.html" . -}}
+  {{- if .IsHome -}}{{- with .Site.Params.images -}}<meta property="og:image" content="{{ index . 0 | absURL }}">{{- end -}}{{ end }}
+  {{ template "_internal/twitter_cards.html" . -}}
+  {{ range .AllTranslations }}
+  <link rel="alternate" href="{{ .Permalink }}" hreflang="{{ .Lang }}">
+  {{- if eq .Lang "en" }}
+  <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default">
+  {{- end -}}{{- end }}
+  <meta name="theme-color" content="#000000">
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="screen">
+  <style>
+    
+  </style>
+</head>
+
+<body id="site">
+  <header>{{ partial "header.html" . }}</header>
+  <main id="site-content">{{ block "main" . }}{{ end }}</main>
+  <footer>{{ partial "footer.html" . }}</footer>
+  <script src="{{ "js/bundle.js" | relURL }}"></script>
+</body>
+
+</html>
