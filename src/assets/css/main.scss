@@ -1,0 +1,79 @@
+@import "~normalize.css/normalize.css";
+
+$mdc-theme-primary: #212121;
+$mdc-theme-background: #000;
+$mdc-theme-surface: #000;
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+html,
+body {
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(0, 0%, 0%) 0%,
+    hsl(0, 0%, 16.73%) 11.9%,
+    hsl(0, 0%, 32.25%) 22.5%,
+    hsl(0, 0%, 46.48%) 32.2%,
+    hsl(0, 0%, 59.33%) 41.2%,
+    hsl(0, 0%, 70.71%) 50%,
+    hsl(0, 0%, 80.5%) 58.8%,
+    hsl(0, 0%, 88.54%) 67.8%,
+    hsl(0, 0%, 94.66%) 77.5%,
+    hsl(0, 0%, 98.59%) 88.1%,
+    hsl(0, 0%, 100%) 100%
+  );
+  background-repeat: no-repeat;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  z-index: -1;
+  margin-top: 25px;
+}
+
+.nineteeneightytwo-logo {
+  margin: 0 auto;
+}
+
+canvas#confetti-holder {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+#numbers {
+  fill: #fff;
+  max-width: 230px;
+  width: 100%;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.mdc-top-app-bar {
+  background-color: transparent;
+}
+
+.music {
+  max-width: 772px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+h1 {
+  color: fuchsia;
+}

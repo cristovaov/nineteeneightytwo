@@ -17,8 +17,19 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader"]
+        test: /\.(s*)css$/,
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader?url=false",
+          "postcss-loader",
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules']
+            }
+          }
+        ]
       }
     ]
   },
