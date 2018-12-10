@@ -1,11 +1,7 @@
-import { MDCTopAppBar } from "@material/top-app-bar/index";
-import "confetti-js/dist/index";
 import "../css/main.scss";
+import "confetti-js/dist/index";
 
 // Instantiation
-const topAppBarElement = document.querySelector(".mdc-top-app-bar");
-const topAppBar = new MDCTopAppBar(topAppBarElement);
-
 const confetti = new ConfettiGenerator();
 confetti.render();
 

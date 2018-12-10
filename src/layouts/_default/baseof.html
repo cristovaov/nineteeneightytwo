@@ -40,20 +40,17 @@
   <meta name="theme-color" content="#000000">
   <meta name="msapplication-navbutton-color" content="#000000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="screen">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="{{ "css/main.min.css" | relURL }}" media="screen">
   <style>
     
   </style>
 </head>
 
 <body id="site">
-  
-  {{ partial "header.html" . }}
-  <main id="site-content" class="mdc-top-app-bar--prominent-fixed-adjust">{{ block "main" . }}{{ end }}</main>
-  <footer>{{ partial "footer.html" . }}</footer>
   <canvas id="confetti-holder"></canvas>
+  {{ partial "header.html" . }}
+  <main>{{ block "main" . }}{{ end }}</main>
+  <footer>{{ partial "footer.html" . }}</footer>
   <script src="{{ "js/bundle.js" | relURL }}"></script>
 </body>
 
