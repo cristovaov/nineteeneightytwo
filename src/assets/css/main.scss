@@ -2,13 +2,17 @@
 
 $family-sans-serif: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
 $footer-background-color: transparent;
-$footer-padding: 3rem 1.5rem 3.5rem;
+$footer-padding: 3rem 1.5rem 3rem;
 $title-color: #ff00ff;
 
 @import "~bulma/bulma";
 
 html {
   background-color: #000;
+}
+
+a {
+  text-decoration: underline;
 }
 
 #confetti-holder {
@@ -29,7 +33,7 @@ html {
 }
 
 .nineteeneightytwo-logo {
-  margin: 2.37333rem auto 1.424rem auto;
+  margin: 0 auto 1.424rem auto;
   max-width: 640px;
   max-height: 360px;
 
@@ -44,9 +48,14 @@ html {
 }
 
 .coming-soon {
+  margin: 2.37333rem auto 1.424rem auto;
 
   img {
     display: block;
     margin: 0 auto;
   }
+}
+
+.level-item {
+  border: 1px solid;
 }

@@ -6744,10 +6744,13 @@ label.panel-block {
 
 .footer {
   background-color: transparent;
-  padding: 3rem 1.5rem 3.5rem; }
+  padding: 3rem 1.5rem 3rem; }
 
 html {
   background-color: #000; }
+
+a {
+  text-decoration: underline; }
 
 #confetti-holder {
   position: fixed;
@@ -6764,7 +6767,7 @@ html {
     visibility: hidden; } }
 
 .nineteeneightytwo-logo {
-  margin: 2.37333rem auto 1.424rem auto;
+  margin: 0 auto 1.424rem auto;
   max-width: 640px;
   max-height: 360px; }
   .nineteeneightytwo-logo svg {
@@ -6773,7 +6776,12 @@ html {
   .nineteeneightytwo-logo svg#numbers {
     fill: #fff; }
 
-.coming-soon img {
-  display: block;
-  margin: 0 auto; }
+.coming-soon {
+  margin: 2.37333rem auto 1.424rem auto; }
+  .coming-soon img {
+    display: block;
+    margin: 0 auto; }
+
+.level-item {
+  border: 1px solid; }
 
