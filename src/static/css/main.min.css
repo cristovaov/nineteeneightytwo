@@ -263,7 +263,7 @@ button,
 input,
 select,
 textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Comic Sans", "Comic Sans MS", "Chalkboard", "ChalkboardSE-Regular", "Marker Felt", "Purisa", "URW Chancery L", cursive, sans-serif; }
 
 code,
 pre {
@@ -3385,7 +3385,7 @@ a.tag:hover {
     vertical-align: middle; }
 
 .title {
-  color: #363636;
+  color: #ff00ff;
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.125; }
@@ -6743,10 +6743,37 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: transparent;
   padding: 3rem 1.5rem 6rem; }
+
+html {
+  background-color: #000; }
 
 #confetti-holder {
   position: fixed;
   z-index: -9999; }
+
+.blink {
+  animation-duration: 1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, start); }
+
+@keyframes blink {
+  80% {
+    visibility: hidden; } }
+
+.nineteeneightytwo-logo {
+  margin: 2.37333rem auto 1.424rem auto;
+  max-width: 640px;
+  max-height: 360px; }
+  .nineteeneightytwo-logo svg {
+    display: block;
+    margin: 0 auto; }
+  .nineteeneightytwo-logo svg#numbers {
+    fill: #fff; }
+
+.coming-soon img {
+  display: block;
+  margin: 0 auto; }
 

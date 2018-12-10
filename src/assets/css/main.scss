@@ -1,7 +1,51 @@
 @charset "utf-8";
+
+$family-sans-serif: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
+$footer-background-color: transparent;
+$title-color: #ff00ff;
+
 @import "~bulma/bulma";
+
+html {
+  background-color: #000;
+}
 
 #confetti-holder {
   position: fixed;
   z-index: -9999;
+}
+
+.blink {
+  animation-duration: 1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, start);
+}
+@keyframes blink {
+  80% {
+      visibility: hidden;
+  }
+}
+
+.nineteeneightytwo-logo {
+  margin: 2.37333rem auto 1.424rem auto;
+  max-width: 640px;
+  max-height: 360px;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  svg#numbers {
+    fill: #fff;
+  }
+}
+
+.coming-soon {
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 }
