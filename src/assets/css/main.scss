@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-$family-sans-serif: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
+$black: hsl(0, 0%, 4%);
+
+$body-background-color: $black;
+$body-family: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
 $footer-background-color: transparent;
 $footer-padding: 3rem 1.5rem 3rem;
 $title-color: #ff00ff;
 
 @import "~bulma/bulma";
-
-html {
-  background-color: #000;
-}
 
 a {
   text-decoration: underline;
