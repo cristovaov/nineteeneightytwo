@@ -6988,15 +6988,8 @@ figcaption {
   position: fixed;
   z-index: -9999; }
 
-.nineteeneightytwo-logo {
-  margin: 0 auto 1.424rem auto;
-  max-width: 426px;
-  max-height: 240px; }
-  .nineteeneightytwo-logo svg {
-    display: block;
-    margin: 0 auto; }
-  .nineteeneightytwo-logo svg#numbers {
-    fill: #fff; }
+.is-ribbed a.title {
+  line-height: 2.5rem; }
 
 .blink {
   animation-duration: 1s;
@@ -7008,14 +7001,23 @@ figcaption {
   80% {
     visibility: hidden; } }
 
+.nineteeneightytwo-logo {
+  margin: 0 auto 1.424rem auto;
+  max-width: 426px;
+  max-height: 240px; }
+  .nineteeneightytwo-logo svg {
+    display: block;
+    margin: 0 auto; }
+  .nineteeneightytwo-logo svg#numbers {
+    fill: #fff; }
+
 .coming-soon {
-  margin: 2.37333rem auto 1.424rem auto; }
+  margin: 2.424rem auto;
+  max-width: 563px;
+  max-height: 440px; }
   .coming-soon img {
     display: block;
     margin: 0 auto; }
-
-.is-ribbed a.title {
-  line-height: 2.5rem; }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   table, thead, tbody, th, td, tr {

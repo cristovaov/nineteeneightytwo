@@ -53,18 +53,11 @@ figcaption {
   z-index: -9999;
 }
 
-.nineteeneightytwo-logo {
-  margin: 0 auto 1.424rem auto;
-  max-width: 426px;
-  max-height: 240px;
+.is-ribbed {
+  @extend %ribbed-containers;
 
-  svg {
-    display: block;
-    margin: 0 auto;
-  }
-
-  svg#numbers {
-    fill: #fff;
+  a.title {
+    line-height: 2.5rem;
   }
 }
 
@@ -81,20 +74,29 @@ figcaption {
   }
 }
 
+.nineteeneightytwo-logo {
+  margin: 0 auto 1.424rem auto;
+  max-width: 426px;
+  max-height: 240px;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  svg#numbers {
+    fill: #fff;
+  }
+}
+
 .coming-soon {
-  margin: 2.37333rem auto 1.424rem auto;
+  margin: 2.424rem auto;
+  max-width: 563px;
+  max-height: 440px;
 
   img {
     display: block;
     margin: 0 auto;
-  }
-}
-
-.is-ribbed {
-  @extend %ribbed-containers;
-
-  a.title {
-    line-height: 2.5rem;
   }
 }
 
