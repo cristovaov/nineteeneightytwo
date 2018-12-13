@@ -1,60 +1,25 @@
 @charset "utf-8";
 
 $black: hsl(0, 0%, 4%);
+$true-magenta: #ff00ff;
+$true-link-blue: #0000ee;
+$comic-sans: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
 
+$true-magenta-invert: findColorInvert($true-magenta) !default;
+$custom-colors: (
+    "true-magenta":($true-magenta, $true-magenta-invert)
+);
+
+$link: $true-link-blue;
 $body-background-color: $black;
-$body-family: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
+$body-size: 18px;
 $footer-background-color: transparent;
 $footer-padding: 3rem 1.5rem 3rem;
-$title-color: #ff00ff;
+$title-color: $true-magenta;
+
+%ribbed-containers {
+  border: 6px ridge;
+}
 
 @import "~bulma/bulma";
-
-a {
-  text-decoration: underline;
-}
-
-#confetti-holder {
-  position: fixed;
-  z-index: -9999;
-}
-
-.blink {
-  animation-duration: 1s;
-  animation-name: blink;
-  animation-iteration-count: infinite;
-  animation-timing-function: steps(2, start);
-}
-@keyframes blink {
-  80% {
-      visibility: hidden;
-  }
-}
-
-.nineteeneightytwo-logo {
-  margin: 0 auto 1.424rem auto;
-  max-width: 640px;
-  max-height: 360px;
-
-  svg {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  svg#numbers {
-    fill: #fff;
-  }
-}
-
-.coming-soon {
-  margin: 2.37333rem auto 1.424rem auto;
-
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.level-item {
-  border: 1px solid;
-}
+@import "custom";

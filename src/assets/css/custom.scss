@@ -1,0 +1,142 @@
+body {
+  font-size: 1.125rem;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: $comic-sans;
+}
+
+a {
+  text-decoration: underline;
+}
+
+figure {
+  height: auto !important;
+}
+
+figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+
+  h4 {
+    font: italic smaller sans-serif;
+    font-size: 100% !important;
+    color: #fff !important;
+    line-height: normal !important;
+    margin: 0 !important;
+  }
+}
+
+.align-left {
+  display: inline;
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.align-right {
+  display: inline;
+  float: right;
+  margin-left: 1.5rem;
+}
+
+.align-center {
+  display: block;
+  margin: 0 auto;
+  clear: both;
+}
+
+#confetti-holder {
+  position: fixed;
+  z-index: -9999;
+}
+
+.nineteeneightytwo-logo {
+  margin: 0 auto 1.424rem auto;
+  max-width: 426px;
+  max-height: 240px;
+
+  svg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  svg#numbers {
+    fill: #fff;
+  }
+}
+
+.blink {
+  animation-duration: 1s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2, start);
+}
+
+@keyframes blink {
+  80% {
+    visibility: hidden;
+  }
+}
+
+.coming-soon {
+  margin: 2.37333rem auto 1.424rem auto;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.is-ribbed {
+  @extend %ribbed-containers;
+
+  a.title {
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    border: none !important	;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Event";
+  }
+  td:nth-of-type(2):before {
+    content: "Location";
+  }
+  td:nth-of-type(3):before {
+    content: "Date";
+  }
+}
