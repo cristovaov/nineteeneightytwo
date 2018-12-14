@@ -6977,16 +6977,26 @@ figcaption {
   float: left;
   margin: 0.5rem 0;
   margin-right: 1.5rem; }
+  @media screen and (max-width: 425px) {
+    .align-left {
+      margin: 1.5rem auto;
+      float: none;
+      clear: both; } }
 
 .align-right {
   display: block;
   float: right;
   margin: 0.5rem 0;
   margin-left: 1.5rem; }
+  @media screen and (max-width: 425px) {
+    .align-right {
+      margin: 1.5rem auto;
+      float: none;
+      clear: both; } }
 
 .align-center {
   display: block;
-  margin: 0.5rem auto;
+  margin: 1.5rem auto;
   clear: both; }
 
 #confetti-holder {
@@ -7023,6 +7033,15 @@ figcaption {
   .coming-soon img {
     display: block;
     margin: 0 auto; }
+
+.fb a {
+  color: #3B5998; }
+  .fb a svg {
+    width: 32px;
+    height: 32px;
+    fill: #3B5998;
+    margin: 12px 6px 0;
+    display: inline-block; }
 
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
   table, thead, tbody, th, td, tr {
