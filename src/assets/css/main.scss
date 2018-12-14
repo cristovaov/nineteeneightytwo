@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("../fonts/comici.ttf");
+}
+
 $black: hsl(0, 0%, 4%);
 $true-magenta: #ff00ff;
 $true-link-blue: #0000ee;
