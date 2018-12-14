@@ -12,7 +12,7 @@ test:
 
 hugo_source := src
 hugo_public := public
-URL ?= https://nineteeneightytwo.netlify.com
+URL ?= https://the1982.netlify.com
 
 DEPLOY_URL ?= /
 DEPLOY_PRIME_URL ?= /

@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+  command = "make hugo/public"
+
+[context.production.environment]
+  HUGO_VERSION = "0.51"
+
+[context.branch-deploy]
+  command = "make hugo/branch"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.51"
