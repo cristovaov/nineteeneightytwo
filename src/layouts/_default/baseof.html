@@ -22,7 +22,6 @@
   <meta name="msapplication-navbutton-color" content="#000000">
   <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
   <link rel="stylesheet" href="{{ "css/main.min.css" | relURL }}" media="screen">
-  <!-- {{  partial "debugprint-css.html" }} -->
 </head>
 
 <body id="site">
@@ -31,14 +30,6 @@
   <main id="site-content">{{ block "main" . }}{{ end }}</main>
   <footer class="footer">{{ partial "footer.html" . }}</footer>
   <script src="{{ "js/bundle.js" | relURL }}"></script>
-  <!--  
-  {{ partial "debugprint.html" .Params }}
-  {{ partial "debugprint.html" .Site }}
-  {{ partial "debugprint.html" .Site.Menus }}
-  {{/* partial "debugprint.html" .GitInfo */}}
-  {{ partial "debugprint.html" .Resources }}
-  {{ partial "debugprint.html" .File }}
-  -->
 </body>
 
 </html>
