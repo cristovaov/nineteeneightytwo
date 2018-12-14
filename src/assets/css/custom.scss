@@ -31,20 +31,22 @@ figcaption {
 }
 
 .align-left {
-  display: inline;
+  display: block;
   float: left;
+  margin: 0.5rem 0;
   margin-right: 1.5rem;
 }
 
 .align-right {
-  display: inline;
+  display: block;
   float: right;
+  margin: 0.5rem 0;
   margin-left: 1.5rem;
 }
 
 .align-center {
   display: block;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   clear: both;
 }
 
