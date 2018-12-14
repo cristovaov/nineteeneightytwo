@@ -6,7 +6,7 @@ type: "static"
 ---
 
 <p class="has-text-centered">'1982' was a band from Brussels, Belgium - active between 2007 and 2010.</p>
-{{< figure src="https://bulma.io/images/placeholders/128x128.png" class="image align-left" alt="band picture" >}}
+{{<figure src="images/1982_bota.jpg" class="image align-right is-240x240" alt="1982 band picture" title="Botanique - BXL, 2009" caption="pictured: Fred (vocals) and Cris (guitar)">}}
 <p>Within a short period of time, the 1982's became quickly known for their energetic rock and the stage antics of their singer. Despite their best efforts a single for their poster song "Girls Prefer Winners" on a local label never came about. After a line up change the band started incorporating effects to their music. While doing relatively well on stage, discussions with labels appeared to be difficult and friction between band members started to grow. In 2010 the band split, leaving behind a trail of vague memories, stale beers and confettis.</p>
 <p>The band started off with Fred on vocals, Mathias on drums and soon joined by Ferhad on guitar. 
 From 2008 the line up was: 
