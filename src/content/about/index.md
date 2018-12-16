@@ -12,3 +12,4 @@ Within a short period of time, the 1982's became quickly known for their energet
 From end 2007 the line up was: 
 Frederic Gaillet - vocals, Mathias Wille - drums, Ferhad Ronse - guitar, Cristovao Verstraeten - guitar.  And from halfway 2009:
 Frederic Gaillet - vocals, Mathias Wille - drums, Cristovao Verstraeten - guitar, Arnaud Vanrafelghem - bass.</p>
+{{<figure src="images/band_pic.jpg" class="align-center image is-600x338" alt="1982 band picture" caption="from left to right: Ferhad, Fred, Cris and Mathias.">}}
