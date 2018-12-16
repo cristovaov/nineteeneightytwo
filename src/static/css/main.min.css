@@ -6960,6 +6960,10 @@ h1, h2, h3, h4, h5, h6, a {
 a {
   text-decoration: underline; }
 
+.image.is-600x338 {
+  width: 600px;
+  height: 338px; }
+
 figure {
   height: auto !important; }
 
@@ -6968,7 +6972,8 @@ figcaption {
   color: #fff;
   font: italic smaller sans-serif;
   padding: 3px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   figcaption h4 {
     font: italic smaller sans-serif;
     font-size: 100% !important;
@@ -6981,6 +6986,8 @@ figcaption {
   float: left;
   margin: 0.5rem 0;
   margin-right: 1.5rem; }
+  .align-left img {
+    display: block; }
   @media screen and (max-width: 425px) {
     .align-left {
       margin: 1.5rem auto;
@@ -6992,6 +6999,8 @@ figcaption {
   float: right;
   margin: 0.5rem 0;
   margin-left: 1.5rem; }
+  .align-right img {
+    display: block; }
   @media screen and (max-width: 425px) {
     .align-right {
       margin: 1.5rem auto;
@@ -7002,6 +7011,9 @@ figcaption {
   display: block;
   margin: 1.5rem auto;
   clear: both; }
+  .align-center img {
+    display: block;
+    margin: 0 auto; }
 
 #confetti-holder {
   position: fixed;

@@ -10,6 +10,11 @@ a {
   text-decoration: underline;
 }
 
+.image.is-600x338 {
+  width: 600px;
+  height: 338px;
+}
+
 figure {
   height: auto !important;
 }
@@ -20,6 +25,7 @@ figcaption {
   font: italic smaller sans-serif;
   padding: 3px;
   text-align: center;
+  position: relative;
 
   h4 {
     font: italic smaller sans-serif;
@@ -36,6 +42,10 @@ figcaption {
   margin: 0.5rem 0;
   margin-right: 1.5rem;
 
+  img {
+    display: block;
+  }
+
   @include until($mobile-large) {
     margin: 1.5rem auto;
     float: none;
@@ -49,6 +59,10 @@ figcaption {
   margin: 0.5rem 0;
   margin-left: 1.5rem;
 
+  img {
+    display: block;
+  }
+
   @include until($mobile-large) {
     margin: 1.5rem auto;
     float: none;
@@ -60,6 +74,11 @@ figcaption {
   display: block;
   margin: 1.5rem auto;
   clear: both;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 #confetti-holder {
