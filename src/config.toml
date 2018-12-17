@@ -3,3 +3,13 @@ languageCode = "en-us"
 title = "1982"
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
+enableEmoji = true
+
+[params]
+  description = "'1982' was a band from Brussels, Belgium - active between 2007 and 2010."
+  author = "1982"
+  images = ["img/nineteeneightytwo.jpg"]
+
+# Used by internal templates
+[social]
+facebook = "1982.band"
