@@ -9,5 +9,4 @@ var confettiSettings = {
 const confetti = new ConfettiGenerator(confettiSettings);
 confetti.render();
 
-console.log("Welcome to the 1982's website.");
-console.log("Website developed by 'a pleasant view'");
+console.log("Welcome to the 1982's website.\n Website developed by 'a pleasant view' \n - https://apleasantview.com");
