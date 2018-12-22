@@ -5,6 +5,24 @@
 .is-ribbed {
   border: 6px ridge; }
 
+.intrinsic {
+  display: block;
+  position: relative;
+  height: 0;
+  background-color: #f0f0f0; }
+  .intrinsic.intr-square {
+    padding-top: 100%; }
+  .intrinsic.intr-4x3 {
+    padding-top: 75%; }
+  .intrinsic.intr-16x9 {
+    padding-top: 56.25%; }
+  .intrinsic .intr-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto; }
+
 /*! bulma.io v0.7.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

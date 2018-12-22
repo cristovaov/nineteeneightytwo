@@ -28,5 +28,32 @@ $mobile-large: 426px;
   border: 6px ridge;
 }
 
+.intrinsic {
+  display: block;
+  position: relative;
+  height: 0;
+  background-color: #f0f0f0;
+
+  &.intr-square {
+    padding-top: 100%;
+  }
+
+  &.intr-4x3 {
+    padding-top: 75%;
+  }
+
+  &.intr-16x9 {
+    padding-top: 56.25%;
+  }
+
+  .intr-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 @import "~bulma/bulma";
 @import "custom";
