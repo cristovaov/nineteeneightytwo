@@ -1,5 +1,5 @@
 import "../css/main.scss";
-import "confetti-js/dist/index";
+import ConfettiGenerator from "confetti-js";
 
 // Instantiation
 var confettiSettings = {

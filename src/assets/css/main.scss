@@ -5,7 +5,7 @@
   src: url("../fonts/comici.ttf");
 }
 
-$black: hsl(0, 0%, 4%);
+$black: hsl(0, 0%, 80%);
 $true-magenta: #ff00ff;
 $true-link-blue: #0000ee;
 $comic-sans: "Comic Sans","Comic Sans MS","Chalkboard","ChalkboardSE-Regular","Marker Felt","Purisa","URW Chancery L",cursive,sans-serif;
@@ -26,6 +26,7 @@ $mobile-large: 426px;
 
 %ribbed-containers {
   border: 6px ridge;
+  border-color: #f0f0f0;
 }
 
 .intrinsic {
