@@ -13,3 +13,6 @@ enableEmoji = true
 # Used by internal templates
 [social]
 facebook = "1982.band"
+
+[markup.goldmark.renderer]
+unsafe= true
