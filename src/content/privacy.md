@@ -12,7 +12,10 @@ We take the protection of your data seriously and take appropriate measures to p
 The 1982's do not process or use your personal data.
 
 #### Website
-This website does not use cookies. Visits on this website are not tracked by me. Name and email address shared through the contact form is used for the purposes stated above. This website makes use of services provided by Netlify.
+This website does not use cookies. Visits on this website are not tracked by us. Name and email address shared through the contact form is used for the purposes stated above. This website makes use of services provided by Netlify.
+
+#### Music
+Our music is hosted on Bandcamp and albums are embedded on this website. Their privacy policies applies. 
 
 #### Third parties
 We use Facebook to post updates and have access to followers public profile information. We however do not use this data in any way. Facebook privacy policies applies.
