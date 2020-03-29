@@ -37,7 +37,7 @@ hugo/branch: | hugo hugo/clean_pub netlify/urls
 
 hugo/public: | hugo hugo/clean_pub
 	@cd $(hugo_source) && \
-	npm run build && \
+	npm install && npm run build && \
 	hugo --baseURL "$(URL)" --enableGitInfo
 	@mv $(hugo_source)/$(hugo_public) .
 
